@@ -74,6 +74,7 @@ It now becomes clear, why I told you all that -
 
 ## TODO:
 **I have told I know (what you should know to clean server). If this repro gets popular, I will update code so it could work as passive guard over server of ten's of thousand's of PHP files. For that, here goes todo feature list:**
+
 1. Silent mode to be run behind scenes not distracting with ugly output of numbers and codes
 2. Email-notification if this code finds bad code.
 3. Auto - learn blacklist sample list (smarter detection).
