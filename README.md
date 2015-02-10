@@ -99,5 +99,5 @@ It now becomes clear, why I told you all that -
 Project names containing `Narnia` I give if the code is meant to be run into private / hidden locations, without public access. If you see my project containing `Narnia` and you don't have any idea why you see it, it means that you have run into wrong place or something is broken and now you see it. Just like in the movie, it is a real magic...
 
 ---
-# More N!B! - test it first - You could lose content of all your php files or ruin code insid them.
-**I strongly suggest to test clean up script on localhost with corrupted files or at least on copy inside your host. Once I release this to public domain, script runs perfectly, but hackers don't sleep and they could affect their code, so my guardian won't clean it up anymore or affect it so my script will delete more than should.**
+# More N!B! - test it first - You could lose content of all your php files or ruin code inside them.
+**I strongly suggest to test clean up script on localhost with corrupted files or at least on copy inside your host. Once I release this to public domain, script runs perfectly, but hackers don't sleep and they could affect their code, so my guardian won't clean it up any more or so that script will delete more than should.**
