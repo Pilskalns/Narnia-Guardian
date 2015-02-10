@@ -25,8 +25,8 @@ Class NarniaGD
 	}
 	function logSuccess($root, $string){
 		$escaped = preg_replace('/[^A-Za-z0-9_\-]/', '_', $root);
-		file_put_contents($this->selfpath.'/main.log',date('Y-m-d G:i').' '.$string.PHP_EOL, FILE_APPEND);
-		file_put_contents($this->selfpath.'/root-'.$escaped.'.log',date('Y-m-d G:i').' '.$string.PHP_EOL, FILE_APPEND);
+		file_put_contents($this->selfpath.'/logs/main.log',date('Y-m-d G:i').' '.$string.PHP_EOL, FILE_APPEND);
+		file_put_contents($this->selfpath.'/logs/root-'.$escaped.'.log',date('Y-m-d G:i').' '.$string.PHP_EOL, FILE_APPEND);
 	}
 	
 	function cleanMess($curContent){
@@ -42,6 +42,8 @@ Class NarniaGD
 				echo $bad.' pos '.$pos.' start '.$start.' end '.$end.' len '.$lenght.'<br>';
 				if (($start < $end) && ($end < strlen($curContent))){
 					$curContent=substr_replace($curContent,"",$start,$lenght);
+				}else {
+					$this->logSuccess('error-'.$root,'This is messed up with PHP tags '.$path);
 				}
 			}
 		}
@@ -90,7 +92,7 @@ Class NarniaGD
 			$time_end = (float) array_sum(explode(' ',microtime()));
 			$time_diff = "Processing $root time: ". sprintf("%.4f", ($time_end-$time_start))." seconds";
 			$this->logSuccess($root,  $time_diff);
-			file_put_contents($this->selfpath.'/main-scripttime.log',date('Y-m-d G:i').' '.$time_diff.PHP_EOL, FILE_APPEND);
+			file_put_contents($this->selfpath.'/logs/main-scripttime.log',date('Y-m-d G:i').' '.$time_diff.PHP_EOL, FILE_APPEND);
 	}
 	
 	function __destruct() {
@@ -99,7 +101,7 @@ Class NarniaGD
 		foreach ($this->uniquelist as $line){
 			$output=$output.$line.PHP_EOL;
 		}
-		file_put_contents($this->selfpath.'/uniquelist.txt',$output);
+		file_put_contents($this->selfpath.'/logs/uniquelist.txt',$output);
 		// print_r($this->uniquelist);
 	}
 }
