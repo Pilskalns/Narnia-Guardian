@@ -10,7 +10,7 @@ If you got this bad code on your server, it could be triggered any time and coul
 
 **This tool is only helper to fix already broken things. You shouldn't rely on this as primary protection. Correctly set server environment is first thing to check after attack.**
 
-## Lyrics
+## Lyrics before action
 To create this, I have donated two workday's to clean up private server, please contribute with code comments, better descriptions in more fluent language and other suggestions.
 So far, my motivation to update is anger on this malware, as I do not code for living and this malware code ruined our multiple site server for non-profit organisations, where I belong. I believe in open source software (OSS) and believe that OSS can be more safer than paid one, if public gives effort to it. There is so many great programmers amongst us, unfortunately, at least as much, there are ones, who use their skills for personal good doing bad things.
 
@@ -52,8 +52,7 @@ It now becomes clear, why I told you all that -
 3. IF everything matches up - everything inside those matching pairs of PHP tags will be removed, including tags itself, to maintain clean code 
 2. For every case - malware samples are different - **You have to update them in order to clean up your code**
 
----
-## What files does Narnia Guardian contains?
+### What files does Narnia Guardian contains?
 
 |File					| Role
 |-----------------------|---------------------------
@@ -74,16 +73,6 @@ It now becomes clear, why I told you all that -
 5. Check logs folder for success. The one named root-error[..].log will contain list of files, which are suspicious, but could be some large class file. These should be checked and deleted manually.
 1. Repeat steps 3 to 6. If output is much more shorter, it means it is working, don't stop until you are sure that your all of your files are clean.
 
-## TODO:
-**I have told all I know (what you should know to clean server). If this repro gets popular, I will update code so it could work as passive guard over server of ten's of thousand's of PHP files. For that and so in future I can remember all ideas, here goes my todo feature list:**
-
-1. Silent mode to be run behind scenes not distracting with ugly output of numbers and codes
-2. Email-notification if this code finds bad code.
-3. Detection level / flags - whether to output on screen, to send warning email, to auto-delete
-3. Auto - learn blacklist sample list (smarter detection).
-4. Extend out-of-the-box blacklist library, but it shouldn't be too large as it increase script run time. Please send, your set of library samples.
-5. **If this get's really popular:** Will create auto-updater for sample list from public commit repro, but this is dangerous action. In this case Guardian should be ran from hidden location, for example, if you host many PHP sites, and want passive protection against backdoors, because, you newer know, what site owner will do wrong.
-
 ## What You should do next?
 * Copy this script to safe place, chmod it for safety. If in bad hands - it could do bad things out of the box.
 * Change ALL passwords, I mean ALL - WordPress, databases, WordPress salt, user passwords, secret keys, everything - all paswords could be readed by malware code
@@ -93,6 +82,18 @@ It now becomes clear, why I told you all that -
 * Ask your hosting provider to assign new public IP
 * Pray God, that your super-secret files didn't got stolen
 * google more about this issue
+
+---
+
+## TODO:
+**I have told all I know (what you should know to clean server). If this repro gets popular, I will update code so it could work as passive guard over server of ten's of thousand's of PHP files. For that and so in future I can remember all ideas, here goes my todo feature list:**
+
+1. Silent mode to be run behind scenes not distracting with ugly output of numbers and codes
+2. Email-notification if this code finds bad code.
+3. Detection level / flags - whether to output on screen, to send warning email, to auto-delete
+3. Auto - learn blacklist sample list (smarter detection).
+4. Extend out-of-the-box blacklist library, but it shouldn't be too large as it increase script run time. Please send, your set of library samples.
+5. **If this get's really popular:** Will create auto-updater for sample list from public commit repro, but this is dangerous action. In this case Guardian should be ran from hidden location, for example, if you host many PHP sites, and want passive protection against backdoors, because, you newer know, what site owner will do wrong.
 
 ## Why does `Narnia`?
 Project names containing `Narnia` I give if the code is meant to be run into private / hidden locations, without public access. If you see my project containing `Narnia` and you don't have any idea why you see it, it means that you have run into wrong place or something is broken and now you see it. Just like in the movie, it is a real magic...
