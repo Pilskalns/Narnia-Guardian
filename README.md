@@ -73,9 +73,15 @@ It now becomes clear, why I told you all that -
 1. Repeat steps 3 to 6. If output is much more shorter, it means it is working, don't stop until you are sure that your all of your files are clean.
 
 ## TODO:
-1. Silent mode to be run behind scenes not distracting with ugly output of numbers and codes.
+**I have told I know (what you should know to clean server). If this repro gets popular, I will update code so it could work as passive guard over server of ten's of thousand's of PHP files. For that, here goes todo feature list:**
+1. Silent mode to be run behind scenes not distracting with ugly output of numbers and codes
+2. Email-notification if this code finds bad code.
+3. Auto - learn blacklist sample list (smarter detection).
+4. Extend out-of-the-box blacklist library, but it shouldn't be too large as it increase script run time. Please send, your set of library samples.
+If this get's really popular:
+6. Will create auto-updater for sample list from public commit repro, but this is dangerous action. In this case Guardian should be ran from hidden location, for example, if you host many PHP sites, and want passive protection against backdoors, because, you newer know, what site owner will do wrong.
 
-## What to do next?
+## What You should do next?
 * Copy this script to safe place, chmod it for safety. If in bad hands - it could do bad things out of the box.
 * Change ALL passwords, I mean ALL - WordPress, databases, WordPress salt, user passwords, secret keys, everything - all paswords could be readed by malware code
 * Update your OSS or paid software for latest versions, including WordPress, plugins, extensions, anything you have
