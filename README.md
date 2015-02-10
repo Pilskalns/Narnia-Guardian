@@ -1,6 +1,6 @@
 # Narnia Guardian
-### N!B! Read everything before begin clean up
-### Level - intermediate
+#### N!B! Read everything before begin clean up
+### Level - intermediate - there is manual work involved
 This tool is created to clean infected PHP files witch contains obfuscated code. This code could be triggered any time and could do anything on your server. In fact, purpose and content of this malware code also could be changed anytime. Code could be stealing passwords, sending spam e-mail from your IP or even hosting illegal copy of Torrent files and steal traffic you pay for. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
 
 ## Lyrics
