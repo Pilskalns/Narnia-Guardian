@@ -1,11 +1,11 @@
 # Narnia Guardian
 ### N!B! Read everything before begin clean up
 ### Level - intermediate
-This tool is created to clean infected PHP files witch contains obfuscated code. This code could be triggered any time and could do everything on your server. In fact, purpose and content of this malware code also could be changed anytime. Beginning stealing passwords and ending with sending spam e-mail from your IP. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
+This tool is created to clean infected PHP files witch contains obfuscated code. This code could be triggered any time and could do anything on your server. In fact, purpose and content of this malware code also could be changed anytime. Code could be stealing passwords, sending spam e-mail from your IP or even hosting illegal copy of Torrent files and steal traffic you pay for. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
 
 ## Lyrics
 To create this, I have donated two workday's to clean up private server, please contribute with code comments, better descriptions in more fluent language and other suggestions.
-So far, my motivation to update is anger on this malware, as I do not code for living and this malware code ruined our multiple site server for non-profit organisations, where I belong. I believe in open source software (OSS) and believe that OSS can be more safer than paid one, if public gives effort to it. There is so many great programmers amongst us.
+So far, my motivation to update is anger on this malware, as I do not code for living and this malware code ruined our multiple site server for non-profit organisations, where I belong. I believe in open source software (OSS) and believe that OSS can be more safer than paid one, if public gives effort to it. There is so many great programmers amongst us, unfortunately, at least as much, there are ones, who use their skills for personal good doing bad things.
 
 ---
 
