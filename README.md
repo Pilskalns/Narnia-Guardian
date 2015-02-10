@@ -4,7 +4,7 @@
 
 Maybe you are here because of [MailPoet](http://blog.sucuri.net/2014/10/wordpress-websites-continue-to-get-hacked-via-mailpoet-plugin-vulnerability.html)  or [StackOverflow](http://stackoverflow.com/questions/25996752/removing-a-string-in-a-php-file-with-start-and-end/28430880)
 
-This tool is created to clean infected PHP files witch contains obfuscated code or contains dangerous server backdoor. There is code sample on StackOverflow for UNIX system's with root access, but not always you would have it + with those samples, you never know what modifications of bad code you have. With method below you can fine tune bad sample library to match your case.
+This tool is created to clean infected PHP files which contains obfuscated code or contains dangerous server backdoor. There is code sample on StackOverflow for UNIX system's with root access, but not always you would have it + with those samples, you never know what modifications of bad code you have. With method below you can fine tune bad sample library to match your case.
 
 If you got this bad code on your server, it could be triggered any time and could do anything on your server. In fact, purpose and content of this malware code also could be changed anytime. Code could be stealing passwords, sending spam e-mail from your IP or even hosting illegal copy of Torrent files and steal traffic you pay for. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
 
