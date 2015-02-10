@@ -18,4 +18,4 @@ This tool is created to clean infected PHP files with obfuscated code. Donated w
 1. Repeat 3. to 6. 
 
 # N!B! Test it first - You could lose all your files
-## I strongly suggest to test clean up script on localhost with corrupted files or at least on copy inside your host. Once I release this to public domain, script runs perfectly, but hackers don't sleep and they could affect their code, so my guardian won't clean it up anymore or affect it so my script will delete more than should.
+### I strongly suggest to test clean up script on localhost with corrupted files or at least on copy inside your host. Once I release this to public domain, script runs perfectly, but hackers don't sleep and they could affect their code, so my guardian won't clean it up anymore or affect it so my script will delete more than should.
