@@ -3,6 +3,8 @@
 ### Level - intermediate - there is manual work involved
 This tool is created to clean infected PHP files witch contains obfuscated code. There is code sample on StackOverflow for UNIX system's with root access, but not always you would have it + with those samples, you never know what modifications of bad code you have. With method below you can fine tune bad sample library to match your case.
 
+Maybe you are here because of this http://blog.sucuri.net/2014/10/wordpress-websites-continue-to-get-hacked-via-mailpoet-plugin-vulnerability.html or 
+
 If you got this bad code on your server, it could be triggered any time and could do anything on your server. In fact, purpose and content of this malware code also could be changed anytime. Code could be stealing passwords, sending spam e-mail from your IP or even hosting illegal copy of Torrent files and steal traffic you pay for. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
 
 ## Lyrics
@@ -72,7 +74,8 @@ It now becomes clear, why I told you all that -
 1. Silent mode to be run behind scenes not distracting with ugly output of numbers and codes.
 
 ## What to do next?
-* Change ALL passwords, I mean ALL - WordPress, databases, WordPress salt, user passwords, everything - all paswords could be readed by malware code
+* Copy this script to safe place, chmod it for safety. If in bad hands - it could do bad things out of the box.
+* Change ALL passwords, I mean ALL - WordPress, databases, WordPress salt, user passwords, secret keys, everything - all paswords could be readed by malware code
 * Update your OSS or paid software for latest versions, including WordPress, plugins, extensions, anything you have
 * **chmod** correct file permissions for your project. It could be `755` for directory, `644` for files. (**please commit here!**)
 * If it is your own code - walk OVER it ALL manually - check if it is escaped from form inputs, SQL injections etc.
@@ -80,6 +83,9 @@ It now becomes clear, why I told you all that -
 * Pray God, that your super-secret files didn't got stolen
 * google more about this issue
 
+## Why does `Narnia`?
+Project names containing `Narnia` I give if the code is meant to be run into private / hidden locations, without public access. If you see my project containing `Narnia` and you don't have any idea why you see it, it means that you have run into wrong place or something is broken and now you see it. Just like in the movie, it is a real magic...
+
 ---
-# More N!B! - test it first - You could lose all your files
+# More N!B! - test it first - You could lose content of all your php files or ruin code insid them.
 **I strongly suggest to test clean up script on localhost with corrupted files or at least on copy inside your host. Once I release this to public domain, script runs perfectly, but hackers don't sleep and they could affect their code, so my guardian won't clean it up anymore or affect it so my script will delete more than should.**

@@ -14,7 +14,7 @@ $Guard = new NarniaGD;
 // 2: You can test and fine tune script on copy of infected files and then apply on working directory
 $Guard->cleanFiles('../wordpress/');
 
-// Stop 
+// Stop execute futher into website, when everything is safe, you can remove this
 if (true) exit;
 ?>
 <?php
