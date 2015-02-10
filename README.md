@@ -72,7 +72,7 @@ It now becomes clear, why I told you all that -
 ## What to do next?
 * Change ALL passwords, I mean ALL - WordPress, databases, WordPress salt, user passwords, everything - all paswords could be readed by malware code
 * Update your OSS or paid software for latest versions, including WordPress, plugins, extensions, anything you have
-* chmod correct file permissions (**please commit here!**)
+* **chmod** correct file permissions for your project. It could be `755` for directory, `644` for files. (**please commit here!**)
 * If it is your own code - walk OVER it ALL manually - check if it is escaped from form inputs, SQL injections etc.
 * Ask your hosting provider to assign new public IP
 * Pray God, that your super-secret files won't got stolen
