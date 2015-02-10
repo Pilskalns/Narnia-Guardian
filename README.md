@@ -79,8 +79,9 @@ It now becomes clear, why I told you all that -
 2. Email-notification if this code finds bad code.
 3. Auto - learn blacklist sample list (smarter detection).
 4. Extend out-of-the-box blacklist library, but it shouldn't be too large as it increase script run time. Please send, your set of library samples.
+
 If this get's really popular:
-6. Will create auto-updater for sample list from public commit repro, but this is dangerous action. In this case Guardian should be ran from hidden location, for example, if you host many PHP sites, and want passive protection against backdoors, because, you newer know, what site owner will do wrong.
+5. Will create auto-updater for sample list from public commit repro, but this is dangerous action. In this case Guardian should be ran from hidden location, for example, if you host many PHP sites, and want passive protection against backdoors, because, you newer know, what site owner will do wrong.
 
 ## What You should do next?
 * Copy this script to safe place, chmod it for safety. If in bad hands - it could do bad things out of the box.
