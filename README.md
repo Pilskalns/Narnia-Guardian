@@ -1,6 +1,6 @@
 # Narnia Guardian
-##Read everything before begin clean up
-## Level - intermediate
+### N!B! Read everything before begin clean up
+### Level - intermediate
 This tool is created to clean infected PHP files witch contains obfuscated code. This code could be triggered any time and could do everything on your server. In fact, purpose and content of this malware code also could be changed anytime. Beginning stealing passwords and ending with sending spam e-mail from your IP. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
 
 ## Lyrics
@@ -10,7 +10,7 @@ So far, my motivation to update is anger on this malware, as I do not code for l
 ---
 
 ## How does malware code looks like?
-It will be in begining of PHP file and begins with PHP tags as `<?php` and `?>`. This is safest way to ingest this code inside already existing code file. For example you have
+It will be in begining of PHP file and begins with PHP tags as `<?php` and `?>`. This is safest way to ingest this code inside already existing code file. For example **you have**
 
 ``` PHP
 <?php
@@ -18,7 +18,6 @@ It will be in begining of PHP file and begins with PHP tags as `<?php` and `?>`.
  
 ?> // May or may not contain ending tag
 ```
-
 Or even plain HTML inside .php file
 
 ``` HTML
@@ -29,7 +28,7 @@ Or even plain HTML inside .php file
 etc.
 ```
 
-After malware injection file will look something like
+**After malware injection file will look something like**
 ``` PHP
 <?php if(!isset($GLOBALS["\x61\156\x75\156\x61"])) { $ua=strtolower($_SERVER["\x48\124\x54\120\x5f\125\x //etc. ending with ?> if you have turned off your editor line break
 <?php
@@ -79,5 +78,5 @@ It now becomes clear, why I told you all that -
 * Pray God, that your super-secret files won't got stolen
 
 ---
-# N!B! Test it first - You could lose all your files
+# More N!B! - test it first - You could lose all your files
 **I strongly suggest to test clean up script on localhost with corrupted files or at least on copy inside your host. Once I release this to public domain, script runs perfectly, but hackers don't sleep and they could affect their code, so my guardian won't clean it up anymore or affect it so my script will delete more than should.**
