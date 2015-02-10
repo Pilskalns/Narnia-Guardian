@@ -17,7 +17,7 @@ So far, my motivation to update is anger on this malware, as I do not code for l
 ---
 
 ## How does malware code looks like?
-It will be in begining of PHP file and begins with PHP tags as `<?php` and `?>`. This is safest way to inject this code inside already existing code file. In future, malware could get smarter and hide between set of valid code. So, for example **you have**
+It will be in begining of PHP file and begins and closes with `<?php` and `?>`. This is safest way to inject this code inside already existing code file. In future, malware could get smarter and hide between set of valid code. So, for example **you have**
 
 ``` PHP
 <?php
