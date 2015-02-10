@@ -77,6 +77,7 @@ It now becomes clear, why I told you all that -
 
 1. Silent mode to be run behind scenes not distracting with ugly output of numbers and codes
 2. Email-notification if this code finds bad code.
+3. Detection level / flags - whether to output on screen, to send warning email, to auto-delete
 3. Auto - learn blacklist sample list (smarter detection).
 4. Extend out-of-the-box blacklist library, but it shouldn't be too large as it increase script run time. Please send, your set of library samples.
 5. **If this get's really popular:** Will create auto-updater for sample list from public commit repro, but this is dangerous action. In this case Guardian should be ran from hidden location, for example, if you host many PHP sites, and want passive protection against backdoors, because, you newer know, what site owner will do wrong.
