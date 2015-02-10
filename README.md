@@ -1,7 +1,9 @@
 # Narnia Guardian
 #### N!B! Read everything before begin clean up
 ### Level - intermediate - there is manual work involved
-This tool is created to clean infected PHP files witch contains obfuscated code. This code could be triggered any time and could do anything on your server. In fact, purpose and content of this malware code also could be changed anytime. Code could be stealing passwords, sending spam e-mail from your IP or even hosting illegal copy of Torrent files and steal traffic you pay for. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
+This tool is created to clean infected PHP files witch contains obfuscated code. There is code sample on StackOverflow for UNIX system's with root access, but not always you would have it + with those samples, you never know what modifications of bad code you have. With method below you can fine tune bad sample library to match your case.
+
+If you got this bad code on your server, it could be triggered any time and could do anything on your server. In fact, purpose and content of this malware code also could be changed anytime. Code could be stealing passwords, sending spam e-mail from your IP or even hosting illegal copy of Torrent files and steal traffic you pay for. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
 
 ## Lyrics
 To create this, I have donated two workday's to clean up private server, please contribute with code comments, better descriptions in more fluent language and other suggestions.
@@ -75,7 +77,8 @@ It now becomes clear, why I told you all that -
 * **chmod** correct file permissions for your project. It could be `755` for directory, `644` for files. (**please commit here!**)
 * If it is your own code - walk OVER it ALL manually - check if it is escaped from form inputs, SQL injections etc.
 * Ask your hosting provider to assign new public IP
-* Pray God, that your super-secret files won't got stolen
+* Pray God, that your super-secret files didn't got stolen
+* google more about this issue
 
 ---
 # More N!B! - test it first - You could lose all your files
