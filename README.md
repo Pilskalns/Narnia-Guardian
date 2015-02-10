@@ -1,6 +1,6 @@
 Read everything before begin clean up
 # Narnia Guardian
-This tool is created to clean infected PHP files with obfuscated code. Donated whole workday to clean up private server, please contribute with code comments and other suggestions.
+This tool is created to clean infected PHP files with obfuscated code. Donated two workday's to clean up private server, please contribute with code comments, better descriptions in more fluent language and other suggestions.
 
 |File					| Role
 |-----------------------|---------------------------
