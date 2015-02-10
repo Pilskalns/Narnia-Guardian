@@ -8,6 +8,8 @@ This tool is created to clean infected PHP files which contains obfuscated code 
 
 If you got this bad code on your server, it could be triggered any time and could do anything on your server. In fact, purpose and content of this malware code also could be changed anytime. Code could be stealing passwords, sending spam e-mail from your IP or even hosting illegal copy of Torrent files and steal traffic you pay for. Once your IP is globally blacklisted, it is hard to get back SEO on Google etc.
 
+**This tool is only helper to fix already broken things. You shouldn't rely on this as primary protection. Correctly set server environment is first thing to check after attack.**
+
 ## Lyrics
 To create this, I have donated two workday's to clean up private server, please contribute with code comments, better descriptions in more fluent language and other suggestions.
 So far, my motivation to update is anger on this malware, as I do not code for living and this malware code ruined our multiple site server for non-profit organisations, where I belong. I believe in open source software (OSS) and believe that OSS can be more safer than paid one, if public gives effort to it. There is so many great programmers amongst us, unfortunately, at least as much, there are ones, who use their skills for personal good doing bad things.
