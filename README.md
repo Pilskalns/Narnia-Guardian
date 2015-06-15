@@ -1,3 +1,5 @@
+*Hi everyone, I will be soon update Narnia with complete new version of Narnia - Narnia 2.0, it will feature a lot of new features and probably wont jump to 3.0, but will evolve in 2.1, 2.2 etc... but slowly. As I mentioned - this gets devoloped only in my free time. I keep this repro only to preserve knowledge and give back to learning-community!*
+
 # Narnia Guardian - server backdoor killer
 #### N!B! Read everything before begin clean up
 ### Level - intermediate - there is manual work involved
