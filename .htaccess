@@ -1,0 +1,5 @@
+# Disallow readme, log and data files
+<FilesMatch "\.(txt|dat|log)$">
+order allow,deny
+deny from all
+</FilesMatch>
