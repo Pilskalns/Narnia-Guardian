@@ -1,4 +1,4 @@
-# Narnia Guardian 2.0 - server backdoor killer
+## Narnia Guardian 2.0 - server backdoor killer
 #### N!B! Read everything before begin clean up
 ### Level - intermediate - there is manual work involved, you should have some level of confidence of your written code and actions, as well as basic understanding of server enviroment
 
