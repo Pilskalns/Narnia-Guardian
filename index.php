@@ -1,36 +1,75 @@
-<?php 
-/* THIS you should include into your root index file, so script could be run on load of domain.
- * Or you can move anywhere you want - this script is safe of corrupting itself, as it does not include searched malware script parts.
- * If Narnia Guardian files will get corrupted - it will clean up itself.
- */
-
-// Import and setup Guardian script
-include '../NarniaGuardian/NarniaGuardian.php';
-$Guard = new NarniaGD;
-
-// Clean files within this $root to search. $root is relative to index.php not NarniaGuardian.php
-// If you have parked multiple domains on one host, you would like to do clean up for each separately, because then
-// 1: logs will be splitted
-// 2: You can test and fine tune script on copy of infected files and then apply on working directory
-$Guard->cleanFiles('../wordpress/');
-
-// Stop execute futher into website, when everything is safe, you can remove this
-if (true) exit;
-?>
 <?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
-
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define('WP_USE_THEMES', true);
-
-/** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+	error_reporting(E_ERROR);
+	function rumbins(){
+		//do nothing right now
+		return false;
+	}
+	
+	// Path to Guardian
+	include '../../NG/NG.php';
+	$Guard = new NarniaGD;
+	
+	//Set options in a bunch
+	$Guard->setOption(array(			//Default (you can not set it):
+		'logLevel'		=>	'error',	// Info
+		// 'mode'			=>	'silent',	// Not developed yet
+		'longLine'		=>	800,		// 140
+		'memoryLimit'	=>	512, 		// Check server environment
+		// 'maxDepth'		=>	0,			// -1, how deep through folder levels it will go
+		// 'loopLength'	=>	,
+		// 'loopOffset'	=>	,
+		'loopStart'		=>	5,
+		'loopEnd'		=>	5,
+		// 'useRealPath'	=>	true, 	// true
+		// 'nonExisting'=>'function'
+	));
+	
+	
+	/*
+		Some testing functions, you can use them while testing on copy of files, because them will
+		somehow corrupt, delete or skip them.
+	*/
+	// $Guard->cleanLineBreaks(true);
+	// $Guard->setLoopLimiter(10);
+	
+	// $Guard->develop = true; //Will delete all other files than PHP for iterator optimization USE WITH SUPER CAUTION
+	
+	
+	/*
+		Advanced usage - if above options are not enough, you can register your own Regular Express
+		pattern. Regex patterns could be overridden and I will be creative and just slightly change
+		existing pattern:
+	*/
+	$Guard->registerRegexPattern('tonOfSpace','/(\s){99}/');
+	
+	
+	/*
+		Even further - you can register custom filter function, which tells whether given $string
+		is good or bad. As bonus, you can use current $offset (in file) and $path, but don't rely
+		on $offset as constant, because if there is more than one bad <?php ... ?> section, after
+		first clean-up, $offset for rest will change.
+		
+		Here will show up even last single <?php... tag
+		
+		To decide if given string should be removed - return true or false from your function:
+		You got only one job, don't f*ck up everything :)
+	*/
+	function myCustomFilter($string,$offset,$path){
+		
+		
+		
+		//Non-boolean values as strings, numbers etc. will be treated as true...
+		return false;
+	}
+	
+	/*
+		Your function will be registered as first in check order
+		To activate your custom callback, just
+	*/
+	$Guard->registerRemoveFilter('myCustomFilter');
+	/*
+		Magic goes off here!
+	*/
+	
+	// Single file or root of files
+	$Guard->cleanFiles('../../Pilskalns.lv/ng/index.php');
