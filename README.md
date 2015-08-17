@@ -1,4 +1,4 @@
-# Narnia Guardian 2.0 - server backdoor killer
+## Narnia Guardian 2.0 - server backdoor killer
 #### N!B! Read everything before begin clean up
 ### Level - intermediate - there is manual work involved, you should have some level of confidence of your written code and actions, as well as basic understanding of server enviroment
 
@@ -15,7 +15,7 @@ It will be in begining of PHP file and begins and closes with `<?php` and `?>`. 
 
 ``` PHP
 <?php
-/* Here comes my super-duper code */
+/* Here comes my super-duper-legit code */
  
 ?> // May or may not contain ending tag
 ```
@@ -39,7 +39,7 @@ etc.
 Even hackers have to respect correct syntax of code... So it is easy to spot it by eye if you have turned on your editor word wrap, because in many cases bad code is prefixed with ton of spaces to hide it in code editor. Not like Python, additional spaces in PHP does not affect code execution...
 
 ## Patterns
-You might say, `but wait, there must be way to see patterns and predict which is good or bad code!`. Yes there is, but then you have to dig deep into how this bad code is structured. I have given already my patterns, but you can easily add your in `index.php`, or ocen create complicated functions which tells if given code sample is good or not. Up to you my friend, Narnia 2.0 is about opening up easy adjusting to custom solutions.
+You might say, _but wait, there must be way to see patterns and predict which is good or bad code!_. Yes there is, but then you have to dig deep into how this bad code is structured, dig into regex patterns, backdoor creation and on and on... What I have done a bit and given already my patterns to you and you can improve them inside `index.php`.  You can even create complicated functions which tells if given code sample is good or not. It's up to you my friend -  Narnia 2.0 is about opening up to easy adjusting for custom solutions.
 
 ## How does Narnia Guardian works?
 It now becomes clear, why I told you all that - 
@@ -59,6 +59,8 @@ N!B! For every attack case - malware code is different - **You have to update re
 4. Inspect output of script - there will be block's of obfuscated code - right before it, there should be outputted location where it comes from
 5. Inspect source of obfucated block file - if it is clear that this is not your code or other good minified code, search for string that could be as key string to recognize it, as example `if(!isset($GLOBALS["\x61\156\x75\156\x61"]))` or meaningless variables `$bmhqhhzolg` or `$pjro=22;$vnlpv=$pjro+42;` - copy these kind of strings to `blacklist.dat` library - one sample per one line
 1. Repeat steps 3 to 5. If output is much more shorter, it means it is working, don't stop until you are sure that your all of your files are clean. When you are confident, that test is not ruining good code, put it against original code, but anyways, keep backup of it.
+
+## For more info read comments inside `index.php`
 
 ## What You should do next?
 * Do clean install as much as you can - Install clean wordpress, install clean theme etc. 
